@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(img/b1.avif);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  backdrop-filter: blur(10px);
+}
+
+
+.container{
+  width: 450px;
+  margin: auto;
+  z-index: 100;
+}
+
+.btn{
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+ 
+}
+
+.btn:hover{
+  filter: brightness(0.8);
+}
+
+.btn:active{
+  transform: translateY(2px);
+}
+
+.btn-selector-box{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.btn-selector-box .btn{
+  width: 250px;
+  margin-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 0;
+  background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+  color: #fff;
+}
+
+.btn-selector-box .online{
+  background: rgba(255, 255, 255, 0.203);
+  box-shadow: 0 0 5px 0 #ffffff75;
+  color: firebrick;
+}
+
+.chat-box{
+  width: 100%;
+  height: 550px;
+  color: #fff;
+  background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137, 171, 245, 0.228) 0%, rgba(245, 247, 252, 0.384) 100.2% );
+  padding: 30px 20px;
+  box-shadow: 0 0 5px 0 #ffffff75;
+  border-radius: 10px;
+
+}
+
+.chat-header-title{
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 0 0 2px  black;
+}
+
+.chat-messages{
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.chat-messages::-webkit-scrollbar{
+  display: none;
+}
+
+.message{
+  margin-bottom: 20px;
+  text-overflow: wrap;
+  padding: 10px 20px;
+}
+
+.viol-bg{
+  width: 80%;
+  background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+  border-radius: 30px 30px 0 30px;
+}
+
+.blue-bg{
+  background-color: rgb(53, 78, 153);
+  border-radius: 30px 30px 30px 0;
+  text-align: right;
+  margin-left: 20%;
+}
+
+.sender{
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 0 0 2px  black;
+}
+
+.text{
+  margin-bottom: 5px;
+}
+
+.timestamp{
+  font-size: 12px;
+  color: #ffffffca;
+}
+
+.viol-bg .timestamp{
+  text-align: right;
+}
+
+
+.blue-bg .timestamp{
+  text-align: left;
+}
+
+.send-message{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.chat-input{
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  color: #333;
+  border-radius: 8px;
+}
+
+.send-btn{
+  padding: 8px 10px;
+  color: #fff;
+  font-weight: 600;
+  background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+}
+
+.clear-btn{
+  display: block;
+  color:rgb(53, 78, 153);
+  font-weight: 600;
+  margin-inline: auto;
+}
+
+
+

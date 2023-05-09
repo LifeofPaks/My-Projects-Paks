@@ -1,0 +1,29 @@
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#gameDiv{
+  text-align: center;
+  border: 3px solid;
+  width: 600px;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: 'Brush script MT', cursive;
+  font-size: 1.5rem;
+  background-color: #ccc;
+}
+.choiceBtn{
+  width: 150px;
+  height: 40px;
+  font-weight: bold;
+}
+#playerText{
+  color: blue;
+}
+#computerText{
+  color: firebrick;
+}
+

@@ -1,0 +1,48 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #22559c;
+}
+.drum-keys{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 10px;
+
+}
+
+.key{
+  display: grid;
+  width: 100px;
+  height:100px;
+  place-content: center;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #ffffffcf;
+  box-shadow: 5px 5px 5px 5px rgba(246, 241, 241, 0.11) ;
+  transition: all 0.1s;
+}
+
+.key-pressed{
+  transform: scale(1.2);
+  border: 0.5px solid #fff;
+}
+
+
+
+
+

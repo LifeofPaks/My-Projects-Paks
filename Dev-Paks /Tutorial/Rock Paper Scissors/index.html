@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Rock Paper Scissors - Game</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1> Rock Paper Scissors</h1>
+    
+      <div class="btns">
+      <button class="btn" id="rock">✊ <span>Rock</span></button>
+      <button class="btn" id="paper">✋ <span>Paper</span></button>
+      <button class="btn" id="scissors">✌️ <span>Scissors</span></button>
+      <button class="btn" id="reset">🔄 <span>Reset</span></button>
+      </div>
+
+      <div class="check-reset display">
+        <h3 id="resetPrompt">Are you sure you want to reset the score?</h3>
+        <button id="yesReset">Yes</button>
+        <button id="noReset">No</button>
+      </div>
+
+      <p class="result"></p>
+      <p class="moves"></p>
+      <p class="score"> </p>
+      <button id="auto" class="auto-play"><i class="fa-solid fa-circle-play"></i></button>
+      <button id="auto" class="stop-auto-play hide"><i class="fa-solid fa-circle-stop"></i></button>
+
+
+  
+    </div>
+
+    
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+

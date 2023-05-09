@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/b4.jpeg);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main {
+  background-color: rgba(245, 245, 245, 0.243);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+}
+
+.form-container {
+  color: #444444dd;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.buttons-box {
+  box-shadow: 0 0 30px 1px #388841;
+  border: none;
+  border-radius: 50px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  position: relative;
+  top: 0;
+  font-weight: 600;
+  width: 220px;
+}
+.login-btn {
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #2b4033 74%);
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+.reg-btn {
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #2b4033 74%);
+  border-radius: 50px;
+  top: 0;
+  right: 0;
+  width: 110px;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1.8rem;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
+}
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+.checked {
+  font-size: 7rem;
+  text-align: center;
+}
+
+.form-container .input {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.2);
+  color: #444444dd;
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem;
+  width: 300px;
+}
+.form-container .input:focus {
+  outline: none;
+}
+.form-container .input::placeholder {
+  letter-spacing: 1px;
+  color: #c2baba;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control .error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 10px;
+}
+
+.confirm {
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #2b4033 74%);
+  border: none;
+  border-radius: 50px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 300px;
+}
+.small {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+.icons {
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  text-shadow: 2px 2px 5px black;
+}

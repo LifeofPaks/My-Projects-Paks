@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Vibe - Paks</title>
+  </head>
+  <body>
+
+
+    <!-- NAVBAR=================================================== -->
+    <nav>
+
+
+      <!-- NAVBAR LEFT=================================================== -->
+      <div class="nav-left">
+
+        <a href="./index.html"><h2 class="logo"><span>V</span>ibes</h2></a>
+
+        <ul>
+          <li><img src="img/notification.png" alt=""></li>
+          <li><img src="img/inbox.png" alt=""></li>
+          <li><img src="img/video.png" alt=""></li>
+        </ul>
+
+      </div>
+
+
+
+
+      <!-- NAVBAR RIGHT=================================================== -->
+      <div class="nav-right">
+
+        <div class="search-box">
+          <img src="img/search.png">
+          <input type="text" placeholder="search">
+        </div>
+
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="img/profile-pic.png" alt="">
+        </div>
+
+      </div>
+
+
+
+
+        <!-- SETTINGS MENU=================================================== -->
+      <div class="settings-menu">
+
+        <div id="darkMode-btn" onclick="darkModeToggle()">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+
+          <div class="user-profile">
+            <img src="img/profile-pic.png" >
+            <div>
+              <p>John Nicholson</p>
+              <a href="./profile.html">See your profile</a>
+            </div>
+          </div>
+
+          <hr>
+  
+          <div class="user-profile">
+            <img src="img/feedback.png" >
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="settings-links">
+            <img src="img/setting.png" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="img/arrow.png" width="5"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="img/help.png" class="settings-icon">
+            <a href="#">Help & Support <img src="img/arrow.png" width="5"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="img/display.png" class="settings-icon">
+            <a href="#">Display & Accessibility <img src="img/arrow.png" width="5"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="img/logout.png" class="settings-icon">
+            <a href="#">Logout <img src="img/arrow.png" width="5"></a>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+
+
+  <!-- MAIN =================================================== -->
+    <div class="container">
+
+
+
+        <!-- LEFT SIDEBAR=================================================== -->
+      <div class="left-sidebar">
+
+          <div class="imp-links">
+
+            <a href="#"><img src="img/news.png" >Latest News</a>
+            <a href="#"><img src="img/friends.png" >Friends</a>
+            <a href="#"><img src="img/group.png" >Group</a>
+            <a href="#"><img src="img/marketplace.png" >Marketplace</a>
+            <a href="#"><img src="img/watch.png" >Watch</a>
+            <a href="#">See More</a>
+
+          </div>
+
+          <div class="shortcut-links">
+
+            <p>Your Shortcuts</p>
+
+            <a href="#"><img src="img/shortcut-1.png">Web Developers</a>
+            <a href="#"><img src="img/shortcut-2.png">Web Design Course</a>
+            <a href="#"><img src="img/shortcut-3.png">Full Stack Development</a>
+            <a href="#"><img src="img/shortcut-4.png">Website Experts</a>
+            
+          </div>
+
+      </div>
+
+
+
+       <!-- MAIN CONTENT=================================================== -->
+      <div class="main-content">
+
+
+
+        <!-- STORY GALLERY=================================================== -->
+        <div class="story-gallery">
+
+          <div class="story story-1">
+            <img src="img/upload.png">
+            <p>Post Story </p>
+          </div>
+
+          <div class="story story-2">
+            <img src="img/member-1.png">
+            <p>Alison</p>
+          </div>
+
+          <div class="story story-3">
+            <img src="img/member-2.png">
+            <p>Jackson</p>
+          </div>
+
+          <div class="story story-4">
+            <img src="img/member-3.png">
+            <p>Samona</p>
+          </div>
+
+          <div class="story story-5">
+            <img src="img/member-4.png">
+            <p>Dave</p>
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- WRITE POST CONTAINER=================================================== -->
+        <div class="write-post-container">
+
+          <div class="user-profile">
+
+            <img src="img/profile-pic.png" >
+
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fa-sharp fa-solid fa-earth-europe"></i> <i class="fa-sharp fa-solid fa-caret-down"></i></small>
+            </div>
+          
+          </div>
+
+          <!-- POST INPUT CONTAINER=================================================== -->
+          <div class="post-input-container">
+
+            <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+
+            <div class="add-post-links">
+              <a href="#"><img src="img/live-video.png">Live Video</a>
+              <a href="#"><img src="img/photo.png">Photo/Video</a>
+              <a href="#"><img src="img/feeling.png"> Feeling/Activity</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- POST CONTAINER=================================================== -->
+        <div class="post-container">
+
+          <div class="post-row">
+
+            <div class="user-profile">
+
+              <img src="img/profile-pic.png" >
+  
+              <div>
+                <p>John Nicholson</p>
+                <span>June 14 2022, 14:22PM</span>
+              </div>
+            
+            </div>
+
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+          </div>
+
+
+          <p class="post-text">
+            The software development industry is one of the fastest-growing sectors in business.
+             By 2028, the demand for future engineers is expected to be 21% higher than it is today.
+              That’s 5% more than any other occupation in the country.
+               <a href="#">#WebDevelopment #DevOps #UI/UX</a>
+          </p>
+
+          <img src="img/feed-image-1.png" class="post-img">
+
+          <div class="post-row">
+
+            <div class="activity-icons">
+
+              <div><img src="img/like-blue.png">129K</div>
+              <div><img src="img/comments.png">86K</div>
+              <div><img src="img/share.png">44K</div>
+
+            </div>
+
+            <div class="post-profile-icon">
+
+              <img src="img/profile-pic.png">
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="post-container">
+
+          <div class="post-row">
+
+            <div class="user-profile">
+
+              <img src="img/profile-pic.png" >
+  
+              <div>
+                <p>John Nicholson</p>
+                <span>June 30 2022, 8:09AM</span>
+              </div>
+            
+            </div>
+
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+          </div>
+
+
+          <p class="post-text">
+            The Software Engineering Statistics 2023 by Kinsta shared surprising facts about 
+            being a software developer, one of them is that tech specialists, on average, 
+            are quite young. Roughly 60% of programmers are younger than 35, while the m
+            edian age is 43. In conclusion, since it’s never too early to start coding,
+             as an employer, you’ll be able to hire young specialists brimming with 
+             ideas for your projects.  
+               <a href="#">#WebDevelopment #DevOps #UI/UX</a>
+          </p>
+
+          <img src="img/feed-image-2.png" class="post-img">
+
+          <div class="post-row">
+
+            <div class="activity-icons">
+
+              <div><img src="img/like.png">59K</div>
+              <div><img src="img/comments.png">16K</div>
+              <div><img src="img/share.png">7K</div>
+
+            </div>
+
+            <div class="post-profile-icon">
+
+              <img src="img/profile-pic.png">
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="post-container">
+
+          <div class="post-row">
+
+            <div class="user-profile">
+
+              <img src="img/profile-pic.png" >
+  
+              <div>
+                <p>John Nicholson</p>
+                <span>July 12 2022, 11:09AM</span>
+              </div>
+            
+            </div>
+
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+          </div>
+
+
+          <p class="post-text">
+            There’s no limit to arising challenges for those who have 
+            chosen computer programming! Even though hard skills are common 
+            in this way, software engineering facts prove that this requirement is 
+            innumerable. For instance, a Full Stack Developer needs to know at 
+            least 4-6 main programming languages and frameworks, not to mention 
+            the emerging trends and AI improvements. In a nutshell, while software 
+            developers never get bored, they should also brace themselves for lifelong learning. 
+             ideas for your projects.  
+               <a href="#">#WebDevelopment #DevOps #UI/UX</a>
+          </p>
+
+          <img src="img/feed-image-3.png" class="post-img">
+
+          <div class="post-row">
+
+            <div class="activity-icons">
+
+              <div><img src="img/like.png">9K</div>
+              <div><img src="img/comments.png">1.3K</div>
+              <div><img src="img/share.png">403</div>
+
+            </div>
+
+            <div class="post-profile-icon">
+
+              <img src="img/profile-pic.png">
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="post-container">
+
+          <div class="post-row">
+
+            <div class="user-profile">
+
+              <img src="img/profile-pic.png" >
+  
+              <div>
+                <p>John Nicholson</p>
+                <span>July 17 2022, 7:23AM</span>
+              </div>
+            
+            </div>
+
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+          </div>
+
+
+          <p class="post-text">
+            One of the alarming facts about software engineers is 
+            connected with the hype around AI replacing programmers. 
+            Contrary to popular belief, it isn’t going to happen anytime soon. 
+            Thomas Dohmke, GitHub CEO, believes that not only will AI not take over developers’ 
+            jobs, but will actually help them learn in augmented environments, 
+            such as Copilot, and assist in coding faster with fewer bugs. 
+            Thus, software engineers can shake off the burden of menial 
+            work and focus on more complex problems instead.  
+               <a href="#">#WebDevelopment #DevOps #UI/UX</a>
+          </p>
+
+          <img src="img/feed-image-4.png" class="post-img">
+
+          <div class="post-row">
+
+            <div class="activity-icons">
+
+              <div><img src="img/like-blue.png">101K</div>
+              <div><img src="img/comments.png">28K</div>
+              <div><img src="img/share.png">4K</div>
+
+            </div>
+
+            <div class="post-profile-icon">
+
+              <img src="img/profile-pic.png">
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="post-container">
+
+          <div class="post-row">
+
+            <div class="user-profile">
+
+              <img src="img/profile-pic.png" >
+  
+              <div>
+                <p>John Nicholson</p>
+                <span>July 16 2022, 16:00PM</span>
+              </div>
+            
+            </div>
+
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+
+          </div>
+
+
+          <p class="post-text">
+            With numerous projects to explore out there, software developers 
+            are known to change jobs every 2-3 years. From the point of view of
+             programmers, facts are in favor of not staying in one position for
+              more than a few years, because usually that implies no significant salary 
+              raises or using the same skills they already have, whereas trying a 
+              variety of projects and company types can help both their tech experience
+               and salary reach new levels. For employers, this tendency means that the 
+               initiative of implementing more challenging tasks and KPI reviews for
+                salary raises are the best options.  
+               <a href="#">#WebDevelopment #DevOps #UI/UX</a>
+          </p>
+
+          <img src="img/feed-image-5.png" class="post-img">
+
+          <div class="post-row">
+
+            <div class="activity-icons">
+
+              <div><img src="img/like.png">27K</div>
+              <div><img src="img/comments.png">8.7K</div>
+              <div><img src="img/share.png">1.1K</div>
+
+            </div>
+
+            <div class="post-profile-icon">
+
+              <img src="img/profile-pic.png">
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <button type = "button" class="load-more-btn">Load More</button>
+
+      </div>
+
+
+      
+
+
+
+
+      <!-- RIGHT SIDEBAR=================================================== --> 
+      <div class="right-sidebar">
+
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+
+          <div class="left-event">
+            <h3>13</h3>
+            <span>March</span>
+          </div>
+
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Transcorp Hilton</p>
+            <a href="#">More Info</a>
+          </div>
+
+        </div>
+
+        <div class="event">
+
+          <div class="left-event">
+            <h3>21</h3>
+            <span>June</span>
+          </div>
+
+          <div class="right-event">
+            <h4>Mobile Marketing</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Sheraton</p>
+            <a href="#">More Info</a>
+          </div>
+
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+
+        <img src="img/advertisement.png" class="sidebar-ads">
+
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-1.png">
+          </div>
+          <p>Alison Mina</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-2.png">
+          </div>
+          <p>Jackson Aston</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="img/member-3.png">
+          </div>
+          <p>Samona Rose</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <p>Copyright &copy;2023 Paks</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
