@@ -370,7 +370,7 @@ h3.my-profession{
 }
 .about .about-content .personal-info .info-item p{
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px 0;
   color: var(--text-black-900);
   border-bottom: 1px solid var(--bg-black-50);
@@ -428,7 +428,7 @@ h3.my-profession{
 }
 .about .about-content .education,
 .about .about-content .experience{
-  flex: 0 0 50%;
+  flex: 50%;
   max-width: 50%;
   margin-top: 30px;
 }
@@ -605,7 +605,7 @@ h3.my-profession{
 .contact .contact-info-item .icon{
   display: inline-block;
 }
-.contact .contact-info-item .icon .fa{
+.contact .contact-info-item .icon .fa, .contact .contact-info-item .icon .fa-brands{
   font-size: 25px;
   color: var(--skin-color);
 }

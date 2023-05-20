@@ -3,13 +3,14 @@ const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
   
+const containerImg = document.querySelector(".container-img");
 const cityName = document.querySelector(".city");
 const temp = document.querySelector(".temp");
 const humidity = document.querySelector(".humidity");
 const wind = document.querySelector(".wind");
-const searchBox = document.querySelector("input");
-const searchBtn = document.querySelector("button");
-const weathericon = document.querySelector(".weather-icon");
+const searchBox = document.querySelector(".search-box");
+const searchContainer = document.querySelector(".search-container");
+const weatherIcon = document.querySelector(".weather-icon");
 const weather = document.querySelector(".weather");
 const error = document.querySelector(".error");
 
@@ -25,28 +26,42 @@ async function checkWeather(city) {
     temp.innerHTML = Math.round(data.main.temp) + "°C ";
     humidity.innerHTML = Math.round(data.main.humidity) + "%";
     wind.innerHTML = Math.round(data.wind.speed) + " km/h";
-  
+    
   
     if (data.weather[0].main == "Clouds") {
-      weathericon.src = "img/clouds.png";
+      weatherIcon.src = "img/clouds.png";
+      containerImg.src = "img/clouds-img.jpg"
+
     } else if (data.weather[0].main == "Rain") {
-      weathericon.src = "img/rain.png";
+      weatherIcon.src = "img/rain.png";
+      containerImg.src = "img/rain-img.jpeg"
+
     } else if (data.weather[0].main == "Clear") {
-      weathericon.src = "img/clear.png";
+      weatherIcon.src = "img/clear.png";
+      containerImg.src = "img/clear-img.jpg"
+
     } else if (data.weather[0].main == "Mist") {
-      weathericon.src = "img/mist.png";
+      weatherIcon.src = "img/mist.png";
+      containerImg.src = "img/mist-img.jpg"
+
     } else if (data.weather[0].main == "Drizzle") {
-      weathericon.src = "img/drizzle.png";
+      weatherIcon.src = "img/drizzle.png";
+      containerImg.src = "img/drizzle-img.jpeg"
+
     } else if (data.weather[0].main == "Snow") {
-      weathericon.src = "img/snow.png";
+      weatherIcon.src = "img/snow.png";
+      containerImg.src = "img/snow-img.jpeg"
     }
+
     weather.style.display = 'block'
     error.style.display = 'none'
   }
 
 }
 
-searchBtn.addEventListener("click", () => {
+searchContainer.addEventListener("submit", (e) => {
+
+  e.preventDefault()
   checkWeather(searchBox.value);
   searchBox.value = "";
 });
