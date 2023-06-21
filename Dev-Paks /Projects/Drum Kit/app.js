@@ -6,6 +6,8 @@ window.addEventListener('keydown', e=>{
     audio.play()
     audio.currentTime = 0
 
+
+// CSS KEY PRESS ANIMATION==================================================
     key.classList.add('key-pressed')
     setTimeout(()=>{
         key.classList.remove('key-pressed')

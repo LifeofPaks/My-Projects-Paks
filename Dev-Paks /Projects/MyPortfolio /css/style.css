@@ -495,7 +495,7 @@ h3.my-profession{
 .about .about-content .timeline .timeline-text{
   line-height: 25px;
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
   color: var(--text-black-700);
 }
 
@@ -554,6 +554,7 @@ h3.my-profession{
   color: var(--text-black-700);
   line-height: 25px;
 }
+
 /* Portfolio */
 .portfolio .container{
   padding-bottom: 40px;
@@ -582,7 +583,19 @@ h3.my-profession{
 .portfolio .portfolio-item-inner .portfolio-img img{
   width: 100%;
   display: block;
+  transition: .5s;
 }
+
+.portfolio .portfolio-item-inner .portfolio-img img:hover{
+  transform: scale(1.03);
+}
+
+.portfolio-title{
+  color: var(--text-black-900);
+  text-align: center;
+  padding: .5rem;
+}
+
 /* Contact */
 .contact-title{
   color: var(--skin-color);
@@ -721,26 +734,6 @@ h3.my-profession{
     flex: 0 0 100%;
     max-width: 100%;
   }
+
 }
 
-/* ===================================PHP================================ */
-.php{
-  max-width: 1000px;
-  width: 100%;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.php h2{
-  font-size: 40px;
-  color: var(--text-black-900);
-  font-weight: 700;
-}
-
-.php a {
-  color: #ec1839;
-}
-
-.php a:hover {
-  color: var(--text-black-900);
-}
