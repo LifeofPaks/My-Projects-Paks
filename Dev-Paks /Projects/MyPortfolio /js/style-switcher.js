@@ -50,3 +50,15 @@ window.addEventListener('load', ()=>{
     }
 })
 
+
+// AUTOMATIC DARKMODE DURING EVENING HOURS
+
+const date = new Date()
+const hour = date.getHours()
+
+if(hour < 12){
+    document.body.classList.remove('dark')
+}
+ else if(hour > 18){
+    document.body.classList.add('dark')
+}

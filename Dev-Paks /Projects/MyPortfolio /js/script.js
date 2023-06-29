@@ -94,3 +94,38 @@ function updateNav(element){
     }
 
 }
+
+
+// ======================================CONTACT FORM============================
+const sendBtn = document.getElementById('send')
+const mailSent = document.querySelector('.mail-sent')
+
+function sendMail(){
+    var params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+    }
+
+    const serviceId = 'service_z3u0yme'
+    const templateId = 'template_mp5jeoe'
+
+    emailjs.send(serviceId, templateId, params)
+    .then(
+        res =>{
+            document.getElementById('name').value = ''
+            document.getElementById('email').value = ''
+            document.getElementById('message').value = ''
+            console.log(res)
+
+            mailSent.classList.add('active')
+
+            setInterval(()=>{
+                mailSent.classList.remove('active')
+            }, 3000)
+        }
+    )
+}
+
+sendBtn.addEventListener('click', sendMail)
+

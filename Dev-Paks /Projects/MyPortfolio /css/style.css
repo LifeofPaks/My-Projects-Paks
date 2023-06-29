@@ -515,6 +515,7 @@ h3.my-profession{
   cursor: pointer;
   padding: 30px 15px;
   text-align: center;
+  height: 350px;
   transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner:hover{
@@ -672,6 +673,19 @@ h3.my-profession{
 .contact .contact-form .btn{
   height: 50px;
   padding: 0 50px;
+}
+
+.mail-sent{
+  font-size: 12px;
+  margin-left: 20px;
+  color: var(--text-black-700);
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.mail-sent.active{
+  opacity: 1;
 }
 
 
